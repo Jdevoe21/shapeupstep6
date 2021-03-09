@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+html{
+    background-image: url("../images/paper.gif");
+}
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 5px solid steelblue;
+    box-shadow: 5px 5px 8px black;
+}
+h1 {
+    font-size: 190%;
+    margin-left: 1em;
+    margin-left: 15px;
+}
+header { 
+    border-bottom: 5px solid steelblue;
+    background-image: linear-gradient(white, lightsteelblue);
+}
+header h2 {
+    font-size: 250%;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #888888;
+    margin-top: 15px;
+}
+header h3{ 
+    font-size: 150%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+header img{
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: steelblue;
+    border-bottom: 5px solid steelblue;
+  }
+  
+  #nav_menu ul li {
+    float: left;
+  }
+  
+  #nav_menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 1em;
+    text-decoration: none;
+  }
+  #nav_menu #about{
+    float: right;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+  #nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: black;
+  }
+/* Horizontal - w3 
+
+#nav_menu ul {
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0px;
+    background-color: #afeeee;
+    padding-right: 10px;
+}
+#nav_menu ul li {
+    display: inline;
+    padding: 5px 10px;
+    border-right: 3px solid black;
+    padding-right: 12px;
+}
+#nav_menu #last{
+    border-right: none;
+}
+#nav_menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav_menu ul li a:hover {
+    color: red;
+}*/
+#nav_list ul {
+    list-style: none;
+
+}
+#nav_list ul li {
+    border: 2px solid black;
+}
+#nav_list ul li a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding: .5em;
+    color: black;
+}
+#nav_list ul li a:hover, #nav_list ul li a:focus{
+    background-color: steelblue;
+    color: white;
+}
+
+section h2, section h3, aside h2{
+    font-size: 120%;
+    margin-left: .5em;
+}
+section p {
+    margin: 15px;
+}
+section blockquote{
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 90%;
+    color: navy;
+    border-left: 3px solid maroon;
+    padding-left: 5px;
+    background-color: lightgreen;
+}
+section a:link {
+    color: maroon;
+}
+section a:visited {
+    color: maroon;
+}
+section a:hover {
+    color: steelblue;
+}
+section a:active {
+    color: steelblue;
+}
+aside h2{
+    color: maroon;
+    font-size: 150%;
+}
+aside a{
+    font-weight: bold;
+}
+aside a:link {
+    color: steelblue;
+}
+aside a:visited {
+    color: steelblue;
+}
+aside a:hover {
+    color: maroon;
+}
+aside a:active {
+    color: maroon;
+}
+.homesection{
+    float: right;
+    width: 65%;
+}
+.sidebar{
+    float: left;
+    padding-top: 25px;
+}
+aside ul li{
+    margin: 5px;
+    margin-left: 2em;
+}
+footer {
+    background-color: steelblue;
+    clear: both;
+}
+footer p{
+    font-size: 75%;
+    text-align: center;
+    color: white;
+    padding: 2em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .homesection  {
+        float: none;
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    #nav_menu ul li {
+        float: none;
+      }
+      #nav_menu #about{
+        float: none;
+    }
+  }
